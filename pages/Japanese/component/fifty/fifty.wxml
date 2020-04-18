@@ -1,0 +1,20 @@
+<scroll-view class="container">
+  <view wx:if="{{isShowNav}}">
+    <block wx:for="{{items}}" wx:for-index="idx" wx:for-item="itemName" wx:key="id">
+      <view 
+        class="weui-btn weui-btn_primary"
+        bindtap="onChangeTab"
+        data-id="{{itemName.id}}"
+        data-currentdata="{{itemName.data}}"
+        >
+        {{itemName.name}}  
+      </view>
+    </block>
+  </view>
+  <view wx:if="{{!isShowNav}}" class="zz-items-container">
+    <view wx:for="{{currentdata}}" wx:for-index="idx" wx:for-item="itemName" wx:key="id" class="zz-item">
+      <text>{{itemName.hiragana}} {{itemName.katakana}} </text>
+      <view>{{itemName.roman}}</view>
+    </view>
+  </view>
+</scroll-view>

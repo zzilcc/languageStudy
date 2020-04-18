@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{items}}" wx:for-index="idx" wx:for-item="itemName" wx:key="id">
+    <view 
+      class="weui-btn weui-btn_primary"
+      bindtap="onNavigate"
+      data-url="{{itemName.url}}"
+      >
+      {{itemName.name}}  
+    </view>
+  </block>
+</view>

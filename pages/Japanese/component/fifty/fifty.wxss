@@ -1,0 +1,22 @@
+/* pages/Japanese/component/fifty/fifty.wxss */
+.container {
+  height: 100%;
+  width: 100%;
+}
+.zz-items-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.zz-item {
+  width: 19%;
+  height: 100rpx;
+  display: block;
+  border: 1rpx solid #eee;
+  text-align: center;
+}
+.zz-item-three {
+  width: 33%!important;
+}
